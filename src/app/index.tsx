@@ -1,11 +1,11 @@
 import { View } from 'react-native';
 
-import { TextComponent } from '@src/components/Text';
+import Background from '@components/Background';
 
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center h-screen w-max">
-      <TextComponent>Hello World</TextComponent>
+      <Background />
     </View>
   );
 }

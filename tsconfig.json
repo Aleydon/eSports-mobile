@@ -4,7 +4,6 @@
     "strict": true,
     "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@src/*": ["./src/*"],
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
       "@utils/*": ["src/utils/*"],
