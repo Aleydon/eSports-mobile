@@ -1,9 +1,19 @@
-import { Text, View } from 'react-native';
+import { ImageBackground } from 'react-native';
 
-export default function Background() {
+import background from '../assets/background-galaxy.png';
+
+interface backgroundProps {
+  children: React.ReactNode;
+}
+
+export default function Background({ children }: backgroundProps) {
   return (
-    <View className="flex justify-center items-center h-screen w-full">
-      <Text>Hello World</Text>
-    </View>
+    <ImageBackground
+      className="flex justify-center items-center h-screen w-full bg-BACKGROUND_900"
+      source={background}
+      defaultSource={background}
+    >
+      {children}
+    </ImageBackground>
   );
 }
