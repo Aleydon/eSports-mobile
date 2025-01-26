@@ -1,9 +1,10 @@
-import { ActivityIndicator, View } from 'react-native';
+import { ActivityIndicator } from 'react-native';
+import Background from './Background';
 
 export default function Loading() {
   return (
-    <View className="flex justify-center items-center">
-      <ActivityIndicator color="#8B5CF6" size="large" />;
-    </View>
+    <Background>
+      <ActivityIndicator color="#8B5CF6" size="large" />
+    </Background>
   );
 }

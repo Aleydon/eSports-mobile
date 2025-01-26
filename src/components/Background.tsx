@@ -9,7 +9,7 @@ interface backgroundProps {
 export default function Background({ children }: backgroundProps) {
   return (
     <ImageBackground
-      className="flex justify-center items-center h-screen w-full bg-BACKGROUND_900"
+      className="flex justify-center items-center h-screen w-full bg-background_900"
       source={background}
       defaultSource={background}
     >

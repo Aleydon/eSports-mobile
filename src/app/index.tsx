@@ -22,14 +22,12 @@ export default function App() {
 
   return (
     <View className="flex-1 items-center justify-center h-screen w-max">
-      <Background>
-        <StatusBar
-          barStyle={'light-content'}
-          backgroundColor={'transparent'}
-          translucent
-        />
-        {!fontsIsLoaded ? <Home /> : <Loading />}
-      </Background>
+      <StatusBar
+        barStyle={'light-content'}
+        backgroundColor={'transparent'}
+        translucent
+      />
+      <Background>{fontsIsLoaded ? <Home /> : <Loading />}</Background>
     </View>
   );
 }
